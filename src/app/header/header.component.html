@@ -1,0 +1,26 @@
+<mat-toolbar>
+
+   <div class="responsive__menu__container">
+      <button class="menu__icon" mat-icon-button (click)="onToggleSidenav()">
+         <mat-icon>menu</mat-icon>
+      </button>
+   </div>
+
+   <div class="header__container">
+
+      <div class="logo__header">
+         <a routerLink="/home"><img src="../../assets/images/main-logo.png" alt="Logo Header"></a>
+      </div>
+
+      <nav>
+         <ul>
+            <li><a class="menu__item" routerLink="/home" routerLinkActive="active">Home</a></li>
+            <li><a class="menu__item" routerLink="/section-one" routerLinkActive="active">Section One</a></li>
+            <li><a class="menu__item" routerLink="/section-two" routerLinkActive="active">Section Two</a></li>
+            <li><a class="menu__item" routerLink="/section-three" routerLinkActive="active">Section Three</a></li>
+            <li><a class="menu__item" routerLink="/contact" routerLinkActive="active">Contacto</a></li>
+         </ul>
+      </nav>
+   </div>
+
+</mat-toolbar>

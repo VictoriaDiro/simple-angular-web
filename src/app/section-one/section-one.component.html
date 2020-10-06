@@ -1,0 +1,89 @@
+<div class="section__container">
+
+   <div class="title__container">
+      <h1>Section One</h1>
+      <div class="separator-container">
+         <div class="separator"></div>
+      </div>
+   </div>
+   <div class="section-content">
+
+      <div class="section-item management-container">
+         <div class="section-title">
+            <div class="left-line"></div>
+            <h3>Loren Ipsum</h3>
+            <div class="right-line"></div>
+         </div>
+         <img class="" src="/assets/images/section-image-1.jpg" alt="Loren Ipsum">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida dolor urna, vitae mollis ipsum molestie quis</p>
+         <a class="read-more" (click)="showModal('management-container')">Lees Más >></a>
+      </div>
+
+      <div class="section-item efficiency-container">
+         <div class="section-title">
+            <div class="left-line"></div>
+            <h3>Loren Ipsum</h3>
+            <div class="right-line"></div>
+         </div>
+         <img class="" src="/assets/images/section-image-2.jpg" alt="Loren Ipsum">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida dolor urna, vitae mollis ipsum molestie quis</p>
+         <a class="read-more" (click)="showModal('efficiency-container')">Lees Más >></a>
+      </div>
+
+      <div class="section-item solar-container">
+         <div class="section-title">
+            <div class="left-line"></div>
+            <h3>Loren Ipsum</h3>
+            <div class="right-line"></div>
+         </div>
+         <img class="" src="/assets/images/section-image-3.jpg" alt="Loren Ipsum">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida dolor urna, vitae mollis ipsum molestie quis</p>
+         <a class="read-more" (click)="showModal('solar-container')">Lees Más >></a>
+      </div>
+
+      <div class="section-item fires-container">
+         <div class="section-title">
+            <div class="left-line"></div>
+            <h3>Loren Ipsum</h3>
+            <div class="right-line"></div>
+         </div>
+         <img class="" src="/assets/images/section-image-4.jpg" alt="Loren Ipsum">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida dolor urna, vitae mollis ipsum molestie quis</p>
+         <a class="read-more" (click)="showModal('fires-container')">Lees Más >></a>
+      </div>
+
+      <div class="section-item resources-container">
+         <div class="section-title">
+            <div class="left-line"></div>
+            <h3>Loren Ipsum</h3>
+            <div class="right-line"></div>
+         </div>
+         <img class="" src="/assets/images/section-image-5.jpg" alt="Loren Ipsum">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida dolor urna, vitae mollis ipsum molestie quis</p>
+         <a class="read-more" (click)="showModal('resources-container')">Lees Más >></a>
+      </div>
+
+      <div class="section-item security-container">
+         <div class="section-title">
+            <div class="left-line"></div>
+            <h3>Loren Ipsum</h3>
+            <div class="right-line"></div>
+         </div>
+         <img class="" src="/assets/images/section-image-6.jpg" alt="Loren Ipsum">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida dolor urna, vitae mollis ipsum molestie quis</p>
+         <a class="read-more" (click)="showModal('security-container')">Lees Más >></a>
+      </div>
+   </div>
+</div>
+
+<!-- POP UP -->
+
+<div class="capa-deshabilitadora-oscura" *ngIf="ourProductPopup" @inOutFade></div>
+
+<app-popup-one
+   *ngIf="ourProductPopup"
+   @PopUpRebote
+   (close)="closeModal($event)"
+   [popupContent]="activePopupContent"
+>
+</app-popup-one>

@@ -1,0 +1,15 @@
+@import "../assets/variables";
+
+mat-sidenav-container {
+
+   mat-sidenav {
+      height: 100%;
+      width: 300px;
+      background-color: $color-light-cyan;
+
+      app-responsive-menu {
+         position: fixed;
+      }
+   }
+
+}

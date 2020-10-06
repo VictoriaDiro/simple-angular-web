@@ -1,0 +1,37 @@
+@import "../../assets/_variables.scss";
+
+mat-nav-list {
+   background-color: $color-light-cyan;
+
+   .responsive-menu-container {
+      margin: 30px 15px;
+
+      .logo__header {
+         margin: 0px 20%;
+         a {
+            img {
+               height: 100px;
+            }
+         }
+      }
+
+      li {
+         margin: 50px 0px;
+         list-style: none;
+         a {
+            font-size: 1.3rem;
+            font-family: 'Montserrat', sans-serif;
+            color: $color-white;
+            &:hover {
+               color: $color-dull-pink;
+               border-bottom: 2px solid $color-dull-pink;
+            }
+         }
+         .active {
+            color: $color-dull-pink;
+            border-bottom: 2px solid $color-dull-pink;
+         }
+      }
+   }
+
+}

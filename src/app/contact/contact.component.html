@@ -1,0 +1,47 @@
+<div class="contact-form-container">
+
+   <div class="contact-form-content">
+      <h3>Para registrase envíe el siguiente formulario</h3>
+
+      <form action="#" method="post">
+         <div class="name-section">
+            <div class="item-section">
+               <label for="name" class="name-label">Nombre<span>*</span></label>
+               <input type="text" name="name" id="name-input" required="" [(ngModel)]="dataForm.nombre">
+            </div>
+            <div class="item-section">
+               <label for="lastname" class="lastname-label">Apellidos<span>*</span></label>
+               <input type="text" name="lastname" id="lastname-input" required="" [(ngModel)]="dataForm.apellido">
+            </div>
+         </div>
+         <div class="number-section">
+            <div class="item-section">
+               <label for="dni" class="dni-label">DNI<span>*</span></label>
+               <input type="text" name="dni" id="dni-input" required="" [(ngModel)]="dataForm.dni">
+            </div>
+            <div class="item-section">
+               <label for="phone" class="phone-label">Teléfono<span>*</span></label>
+               <input type="tel" name="phone" id="phone-input" required=""[(ngModel)]="dataForm.telefono">
+            </div>
+         </div>
+         <div class="address-section item-section">
+            <label for="address" class="address-label">Dirección<span>*</span></label>
+            <input type="text" name="address" id="address-input" required="" [(ngModel)]="dataForm.direccion">
+         </div>
+         <div class="email-section item-section">
+            <label for="email" class="email-label">Email<span>*</span></label>
+            <input type="email" name="email" id="email-input" required="" [(ngModel)]="dataForm.email">
+         </div>
+         <div class="message-section">
+            <label for="message" class="message-label">ASUNTO</label>
+            <textarea name="message" id="message-textarea" required="" rows="10" [(ngModel)]="dataForm.asunto"></textarea>
+         </div>
+         <button type="submit" name="send" id="send"><p>ENVIAR</p></button>
+         <p class="aviso">
+            <span class="">*</span> Los campos son obligatorios.
+         </p>
+      </form>
+
+   </div>
+
+</div>

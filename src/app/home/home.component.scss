@@ -1,0 +1,45 @@
+@import '../../assets/_variables.scss';
+
+.main {
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   background: url("/assets/images/background.jpg") no-repeat;
+   background-size: cover;
+   .content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      position: relative;
+      .hero__caption {
+         margin: 30px 50px;
+         h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+            color: $color-white;
+            @media (max-width: 805px) {
+               font-size: 3rem;
+            }
+            @media (max-width: 630px) {
+               font-size: 2rem;
+            }
+            @media (max-width: 454px) {
+               font-size: 1.5rem;
+            }
+         }
+      }
+      .footer__container {
+         width: 100%;
+         position: absolute;
+         bottom: 80px;
+         text-align: center;
+         .footer__content {
+            font-family: 'Montserrat', sans-serif;
+            color: $color-white;
+         }
+      }
+   }
+}
+

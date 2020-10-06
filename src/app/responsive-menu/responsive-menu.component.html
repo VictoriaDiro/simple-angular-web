@@ -1,0 +1,21 @@
+<mat-nav-list>
+
+   <div class="responsive-menu-container">
+
+      <div class="logo__header">
+         <a routerLink="/home"><img src="../../assets/images/main-logo.png" alt="Logo Header"></a>
+      </div>
+
+      <nav>
+         <ul>
+            <li><a class="menu__item" routerLink="/home" routerLinkActive="active" (click)="onSidenavClose()">Home</a></li>
+            <li><a class="menu__item" routerLink="/section-one" routerLinkActive="active" (click)="onSidenavClose()">Section One</a></li>
+            <li><a class="menu__item" routerLink="/section-two" routerLinkActive="active" (click)="onSidenavClose()">Section Two</a></li>
+            <li><a class="menu__item" routerLink="/section-three" routerLinkActive="active" (click)="onSidenavClose()">Section Three</a></li>
+            <li><a class="menu__item" routerLink="/contact" routerLinkActive="active" (click)="onSidenavClose()">Contacto</a></li>
+         </ul>
+      </nav>
+
+   </div>
+
+</mat-nav-list>

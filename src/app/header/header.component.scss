@@ -1,0 +1,79 @@
+@import "../../assets/_variables.scss";
+
+mat-toolbar {
+   height: 70px;
+   position: fixed;
+   background-color: $color-light-cyan;
+   z-index: 9;
+   .responsive__menu__container {
+      position: fixed;
+      top: 25px;
+      left: 25px;
+      margin-top: -11px;
+      color: $color-dull-pink;
+      z-index: 2;
+      @media (min-width: 1050px) {
+         display: none;
+      }
+   }
+
+   .header__container {
+      height: 70px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      padding: 0px 30px;
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
+      @media (max-width: 1050px) {
+         padding: 0px 65px;
+      }
+      .logo__header {
+         display: flex;
+         justify-content: left;
+         align-items: center;
+         @media (min-width: 1050px) {
+            width: 100%;
+            margin-right: 35px;
+         }
+         a {
+            img {
+               width: 45px;
+               margin: 8px 30px 0px 12px;
+            }
+         }
+      }
+
+      nav {
+         @media (max-width: 1050px) {
+            display: none;
+         }
+         ul {
+            margin: 11px 90px;
+            display: flex;
+            list-style: none;
+            li {
+               a {
+                  margin: 10px 14px 0px 14px;
+                  display: block;
+                  text-decoration: none;
+                  font-family: 'Montserrat', sans-serif;
+                  color: $color-white;
+                  @media (max-width: 1099px) {
+                     margin: 10px 5px 0px 5px;
+                  }
+                  &:hover {
+                     color: $color-dull-pink;
+                     border-bottom: 2px solid $color-dull-pink;
+                  }
+               }
+               .active {
+                  color: $color-dull-pink;
+                  border-bottom: 2px solid $color-dull-pink;
+               }
+            }
+         }
+      }
+   }
+}

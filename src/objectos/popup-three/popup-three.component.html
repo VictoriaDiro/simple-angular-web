@@ -1,0 +1,35 @@
+<div class="modal">
+
+   <div class="back-button-container">
+      <div class="back-button-content" (click)="eventCloseModal()">
+      </div>
+   </div>
+
+   <div class="modal-container">
+
+      <div class="header-modal-container">
+         <div class="title-container">
+            <h2>{{ popupContent.title }}</h2>
+            <div class="separator-container">
+               <div class="separator"></div>
+            </div>
+            <img class="main-image" [src]="popupContent.image" alt="Control y Gestión Centralizada">
+         </div>
+      </div>
+
+      <div class="modal-content">
+         <div class="main-container" *ngFor="let item of popupContent.sections">
+            <div class="">
+            <h3>{{ item.title }}</h3>
+            <ul class="">
+                  <li class="" *ngFor="let itemList of item.services">{{ itemList }}</li>
+               </ul>
+            </div>
+         </div>
+         <p class="text-footer">{{ popupContent.caption }}</p>
+         <p class="text-footer">{{ popupContent.subcaption }}</p>
+      </div>
+
+   </div>
+
+</div>

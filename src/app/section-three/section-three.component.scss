@@ -1,0 +1,88 @@
+@import "../../assets/_variables.scss";
+
+.section-container {
+   height: 100%;
+   width: 100%;
+   margin-top: 105px;
+   margin-bottom: 50px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: url("/assets/images/background.jpg") no-repeat;
+   background-size: cover;
+
+   .title-container {
+      height: 75px;
+      width: 100%;
+      top: 100px;
+      z-index: 1;
+      padding-bottom: 10px;
+
+      h1 {
+         margin-top: 20px;
+         text-align: center;
+      }
+      .separator-container {
+         margin-top: -10px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         .separator {
+            width: 200px;
+            height: 2px;
+         }
+      }
+   }
+   .title-text {
+      text-align: center;
+   }
+   .section-content {
+      max-width: 1100px;
+      margin-top: 220px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-flow: wrap;
+
+      .section-item {
+         width: 100%;
+         margin: 10px;
+
+         @media (min-width: 767px) {
+            width: 45%;
+         }
+
+         img {
+            width: 100%;
+            border-radius: 10px;
+         }
+         p {
+            margin: 5px 0px 30px 0px;
+            padding: 0px 0px 15px 0px;
+            color: #333333;
+            border-bottom: 1px solid #cccccc;
+         }
+      }
+   }
+}
+
+// POPUP
+
+.capa-deshabilitadora-oscura {
+   width: 100vw;
+   height: 100vh;
+   padding: 100px;
+   font-family: 'titillium';
+   background-color: rgba(0,0,0,0.7);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 9;
+}
+

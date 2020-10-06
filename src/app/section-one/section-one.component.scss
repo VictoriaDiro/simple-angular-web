@@ -1,0 +1,150 @@
+@import "../../assets/_variables.scss";
+
+.section__container {
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: url("/assets/images/background.jpg") no-repeat;
+   background-size: cover;
+
+   .title__container {
+      height: 75px;
+      width: 100%;
+      top: 100px;
+      z-index: 1;
+      padding-bottom: 10px;
+
+      h1 {
+         font-size: $fontSizeTwo;
+         text-align: center;
+         color: $color-white;
+      }
+      .separator-container {
+         margin-top: -10px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         .separator {
+            width: 200px;
+            height: 2px;
+         }
+      }
+   }
+
+   h2 {
+      width: 80%;
+      margin: 70px 0px 30px 0px;
+      font-weight: 300;
+
+      @media (max-width: 767px) {
+         width: 95%;
+      }
+   }
+   .section-content {
+      max-width: 80%;
+      padding: 60px;
+      background-color: $white-section-background;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      flex-flow: wrap;
+
+      .section-item {
+         width: 100%;
+         margin: 10px;
+
+         @media (min-width: 767px) {
+            width: 45%;
+         }
+
+         .section-title {
+            position: relative;
+
+            .left-line {
+               position: absolute;
+               top: 49%;
+               background: #e4dddd;
+               height: 2px;
+               left: 0%;
+            }
+            h3 {
+               text-align: center;
+            }
+            .right-line {
+               position: absolute;
+               top: 49%;
+               background: #e4dddd;
+               height: 2px;
+               right: 0%;
+            }
+         }
+
+         img {
+            width: 100%;
+            border-radius: 15px;
+         }
+         p {
+            font-size: 1rem;
+         }
+         .read-more {
+            font-weight: bold;
+            color: #0085ff;
+            text-decoration: none;
+            cursor: pointer;
+         }
+      }
+
+      .management-container, .resources-container {
+         .left-line, .right-line {
+            width: 17%;
+         }
+      }
+      .efficiency-container {
+         .left-line, .right-line {
+            width: 25%;
+         }
+      }
+      .control-container {
+         .left-line, .right-line {
+            width: 31%;
+         }
+      }
+      .fires-container {
+         .left-line, .right-line {
+            width: 18%;
+         }
+      }
+      .solar-container {
+         .left-line, .right-line {
+            width: 31%;
+         }
+      }
+      .security-container {
+         .left-line, .right-line {
+            width: 34%;
+         }
+      }
+      div {
+         .left-line, .right-line {
+            @media (max-width: 457px) {
+               display: none;
+            }
+         }
+      }
+   }
+}
+
+// POPUP
+
+.capa-deshabilitadora-oscura {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0,0,0,0.7);
+   z-index: 1; // Este z-index deberá ir cambiando según convenga
+}
