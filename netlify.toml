@@ -1,0 +1,9 @@
+[build]
+   command = "ng build"
+   publish = "/dist/simple-angular-web"
+   base = "/"
+
+[[redirects]]
+   from = "/*"
+   to = "/index.html"
+   status = 200
